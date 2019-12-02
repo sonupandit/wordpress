@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+.hamburger span.h_menu{
+	display:none;
+}
+
+.prac_sect{
+	margin-bottom: 35px;
+}
+.prac_img {
+    width: 25%;
+    display: table-cell;
+    vertical-align: middle;
+	border: 1px solid #7b2f3d;
+	position:relative;
+}
+.prac_img::after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 8px solid transparent;
+    border-left: 11px solid #7b2f3d;
+    right: -11px;
+    top: 4%;
+    border-bottom: 8px solid transparent;
+}
+
+
+.prac_img img{
+	width:100%;
+}
+.prac_info {
+    width: 75%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+.prac_info h3{
+	font-size: 25px;
+    color: #DDA615;
+    font-weight: 400;
+    margin: 0 0 8px;
+    padding: 0;
+}
+.prac_info h3 a{color: #DDA615;}
+.prac_info h3 a:hover{color: #820024;}
+.prac_info p{
+	font-size: 14px;
+    color: #666;
+    font-weight: 300;
+    margin: 10px 0 5px;
+}
+.prac_info a{}
+
+@media (max-width: 991px){
+	.blackBar strong{display: none;}
+.news_arc{display:none !important;}
+.leftPanel {
+    width: 100%;
+    display: inline-block;
+	margin-bottom: 20px;
+}
+.leftPanel ul {
+    padding: 40px 0;
+}
+.leftPanel ul li {
+    padding: 0px 20px 15px 20px;
+    text-align: left;
+}
+.newsLeftMenu {
+	display:block;
+    width: 270px !important;
+    background: #fff;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 9999;
+    padding: 50px 0px;
+    -webkit-box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all 0.3s;
+    margin-left: 0;
+    float: none !important;
+    margin: 0;
+}
+.practiceLeftMenu {
+	display:block;
+    width: 270px !important;
+    background: #fff;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 9999;
+    padding: 50px 0px;
+    -webkit-box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all 0.3s;
+    margin-left: 0;
+    float: none !important;
+    margin: 0;
+}
+
+.slidenav{
+	-webkit-transform:translateX(0);
+	-moz-transform:translateX(0);
+	-ms-transform:translateX(0);
+	-o-transform:translateX(0);
+	transform:translateX(0)
+}
+.hamburger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    float: right;
+    margin:0;
+}
+.hamburger span {
+    width: 100%;
+    height: 2px;
+    background: #820024;
+    display: block;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all 0.3s;
+}
+.hamburger span.h_menu{
+	right:38px;
+	width: 85px !important;
+	background: none;
+	color: #820024;
+	display:block;
+}
+.hamburger span.h-top {top: 0;}
+.hamburger span.h-middle {
+    top: 50%;
+    margin-top: -1px;
+    width: 25px;
+}
+.hamburger span.h-bottom {
+    bottom: 0;
+    width: 27px;
+}
+.hamburger.h-active span.h-top {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -1px;
+}
+.hamburger.h-active span {width: 100%;}
+.hamburger.h-active span.h-middle {
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+    transform: translateX(-30px);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+.hamburger.h-active span.h-bottom {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 50%;
+    margin-bottom: -1px;
+}
+.leftPanel ul li a.active::after {
+    right: 98px;
+}
+
+
+
+
+}
+@media (max-width: 480px){
+.prac_img {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+    border: 0px solid #7b2f3d;
+    text-align: center;
+}
+.prac_img img {
+    width: auto;
+}
+.prac_info {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+    padding: 0 20px;
+    text-align: center;
+}
+.prac_img::after {
+   display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+

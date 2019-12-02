@@ -1,0 +1,33 @@
+@import 'variable';
+@import 'fonts';
+@import 'font-awesome';
+
+@import "bootstrap";
+@import "flatmenu";
+@import "animate";
+@import "slick";
+@import "venobox";
+@import "mCustomScrollbar.min";
+@import "filters";
+
+@import 'layout';
+@import 'media';
+
+
+.logoWrap{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    img{
+        width: 100% !important;
+        max-width: 229px !important;
+        padding: 0 !important;
+    }
+}
+
+@media(max-width:999px){
+    .logoWrap{
+        img{
+            max-width: 165px !important;
+        }
+    }
+}
