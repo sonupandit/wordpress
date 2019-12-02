@@ -1,6 +1,0 @@
-Team page
-	--category name multiple
-
-News
-	--archive current class
-
